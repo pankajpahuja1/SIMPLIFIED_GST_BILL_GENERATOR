@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".customer_detail">
+
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50sp"
+        android:background="@color/colorPrimaryDark"
+        android:elevation="0dp"
+        android:text="NAME/GST.NO"
+        android:textAlignment="center"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:textEditSuggestionItemLayout="@color/colorPrimaryDark"
+        android:textSize="25sp"
+        android:theme="?attr/actionBarSplitStyle" />
+
+    <EditText
+        android:id="@+id/editText"
+        android:layout_width="304dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50sp"
+        android:layout_marginTop="20sp"
+        android:ems="10"
+        android:hint="00(state code)+(PAN_no)+EN+Z+CS"
+        android:inputType="textNoSuggestions"
+        android:textAlignment="center" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30sp"
+        android:background="@color/colorPrimaryDark"
+        android:elevation="24dp"
+        android:text="Email Address"
+
+        android:textAlignment="center"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+        android:textSize="25sp" />
+
+    <EditText
+        android:id="@+id/editText2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="30sp"
+        android:layout_marginStart="50sp"
+        android:layout_marginTop="30sp"
+        android:hint="abc@xyz.com"
+        android:ems="10"
+        android:inputType="textEmailAddress"
+        android:textAlignment="center" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20sp"
+        android:background="@color/colorPrimaryDark"
+        android:text="Address"
+        android:textAlignment="center"
+        android:textAppearance="@style/TextAppearance.AppCompat.Button"
+        android:textSize="25sp" />
+
+    <EditText
+        android:id="@+id/editText3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="30sp"
+        android:layout_marginStart="30sp"
+        android:layout_marginTop="30sp"
+        android:ems="10"
+        android:inputType="textMultiLine" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="257dp"
+        android:layout_height="37dp"
+        android:layout_marginLeft="70sp"
+        android:layout_marginTop="30sp"
+        android:background="@color/colorPrimaryDark"
+        android:onClick="saave"
+        android:scrollbars="vertical"
+        android:text="Process details" />
+</LinearLayout>
