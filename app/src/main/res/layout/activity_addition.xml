@@ -1,19 +1,20 @@
-<RelativeLayout xmlns:tools="http://schemas.android.com/tools"
-    android:layout_height="match_parent"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:orientation="vertical"
+    android:layout_height="match_parent"
 
-    xmlns:android="http://schemas.android.com/apk/res/android" >
+    android:orientation="vertical">
 
     <TextView
-        android:id="@+id/textView2"
-        android:layout_width="243sp"
-        android:layout_height="42dp"
+        android:layout_width="366dp"
+        android:layout_height="116dp"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="74dp"
+        android:layout_marginTop="21dp"
         android:background="@color/colorPrimaryDark"
+        android:gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|clip_vertical|clip_horizontal|start|end"
         android:text="ENTER YOUR GST NO"
+        android:textAlignment="center"
         android:textSize="24sp" />
 
     <EditText
@@ -31,6 +32,7 @@
 
     <Button
         android:id="@+id/button"
+        style="@android:style/Widget.Button"
         android:layout_width="171dp"
         android:layout_height="77dp"
         android:layout_alignParentBottom="true"

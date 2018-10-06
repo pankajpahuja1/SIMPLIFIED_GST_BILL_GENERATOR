@@ -1,9 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="colorPrimary">#3b5e6f</color>
-
-    <color name="colorPrimaryDark">#3b5e6f</color>
+    <!--defaults-->
+    <color name="colorPrimary">#1A5276</color>
+    <color name="colorPrimaryDark">#758C8D</color>
     <color name="colorAccent">#FF4081</color>
+   <!--till here-->
+
+
+    <color name="descentblue">#0000b3</color>
+    <color name="descentbrick">#813401</color>
+
+
+
+
+
 </resources>
 <!--<color name="colorPrimary">#3b5e6f</color>
 <color name="colorPrimaryDark">#303f9f</color>

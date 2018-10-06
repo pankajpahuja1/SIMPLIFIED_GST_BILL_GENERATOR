@@ -8,6 +8,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
+import android.widget.Toast;
 
 public class addition extends AppCompatActivity {
     EditText ee1;
@@ -22,10 +23,17 @@ public class addition extends AppCompatActivity {
     }
     public void abc(View view)
     {
-        Intent i=new Intent(addition.this,customer_detail.class);
-        String a=ee1.getText().toString();
-        i.putExtra("GST_NO.",a);
-    startActivity(i);
+
+
+            Intent i = new Intent(addition.this, customer_detail.class);
+            String a = ee1.getText().toString();
+            i.putExtra("GST_NO.", a);
+            startActivity(i);
+
+      //  else
+       // {
+        //    Toast.makeText();
+        // }
     }
 }
 
