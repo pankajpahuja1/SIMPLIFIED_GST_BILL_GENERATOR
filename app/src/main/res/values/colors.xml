@@ -2,13 +2,16 @@
 <resources>
     <!--defaults-->
     <color name="colorPrimary">#1A5276</color>
-    <color name="colorPrimaryDark">#758C8D</color>
+    <color name="colorPrimaryDark">#0061b3</color>
     <color name="colorAccent">#FF4081</color>
    <!--till here-->
 
 
     <color name="descentblue">#0000b3</color>
     <color name="descentbrick">#813401</color>
+    <color name="white">#FFFFFF</color>
+    <color name="descentred">#500000</color>
+
 
 
 

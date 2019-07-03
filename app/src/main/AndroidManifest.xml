@@ -16,9 +16,10 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".calculator"></activity>
+        <activity android:name=".calculator" />
         <activity android:name=".customer_detail" />
-        <activity android:name=".HSN_NO"></activity>
+        <activity android:name=".HSN_NO" />
+        <activity android:name=".MainActivity"></activity>
     </application>
 
 </manifest>

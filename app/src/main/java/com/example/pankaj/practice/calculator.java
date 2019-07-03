@@ -1,14 +1,19 @@
 package com.example.pankaj.practice;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 
+import static java.lang.Integer.parseInt;
+
 public class calculator extends AppCompatActivity {
     TextView tv1;
-    Button bn9,bn10,bn11,bn12,bn5,bn6,bn7;
+    Button bn9,bn10,bn11,bn12,bn5,bn6,bn7,bn30,bn15;
+    String b;
     int r=0/*for operators*/,o=0;
     float p=0,q=0,s,gt;
     boolean g;//for decimal button
@@ -26,12 +31,26 @@ public class calculator extends AppCompatActivity {
         bn6=findViewById(R.id.bn6);
         bn7=findViewById(R.id.bn7);
         bn9=findViewById(R.id.bn8);
+        bn30=findViewById(R.id.bn30);
+        bn15=findViewById(R.id.bn15);
+
+
+
+
+
+
+
+
+
+
+
 
 
 
     }
     public void show(View view)
     {
+
        int id= view.getId();
 
         if(id==R.id.bn6){
@@ -177,6 +196,11 @@ public class calculator extends AppCompatActivity {
                 else{tv1.setText(""+q);}
             }
         }
+        if(id==R.id.bn24) {
+           float k= Float.parseFloat(tv1.getText().toString())*100;
+           tv1.setText(""+k);
+        }
+
 
 
             if(id==R.id.bn25) {
@@ -198,6 +222,57 @@ public class calculator extends AppCompatActivity {
 
 
 
+
+
+
+
+
+
+
+
+        if(id==R.id.bn30){
+
+            Intent i = getIntent();
+
+           b=i.getStringExtra("GST_%");
+            Log.d("before",b+"");
+            float f=0;
+             String g= tv1.getText().toString();
+
+            f=Float.parseFloat(g);
+            Float k= Float.parseFloat(b);
+            f=f * k ;
+            Log.d("before",f+"");
+
+            tv1.setText(""+f);
+
+        }
+        if(id==R.id.btn31){
+
+            Intent i = getIntent();
+
+            b=i.getStringExtra("GST_%");
+            Log.d("before",b+"");
+            float f=0;
+            String g= tv1.getText().toString();
+
+            f=Float.parseFloat(g);
+            Float k= Float.parseFloat(b);
+            f=f/k ;
+            Log.d("before",f+"");
+
+            tv1.setText(""+f);
+
+        }
+
+
+      //  Intent d = getIntent();
+      //  b=d.getStringExtra("custGST_NO");
+
+        if(id==R.id.bn15) {
+            Intent i= new Intent(calculator.this,MainActivity.class);
+            startActivity(i);
+        }
 
 
 

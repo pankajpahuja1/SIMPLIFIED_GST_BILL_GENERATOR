@@ -9,7 +9,6 @@
         android:id="@+id/tv1"
         android:layout_width="match_parent"
         android:layout_height="150sp"
-        android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
         android:background="#8FBC8F"
         android:text="HELLO USER" />
@@ -29,7 +28,6 @@
                 android:id="@+id/bn9"
                 android:layout_width="wrap_content"
                 android:layout_height="90sp"
-                android:layout_alignParentStart="true"
                 android:layout_below="@+id/tv1"
                 android:onClick="show"
                 android:text="   +   " />
@@ -39,7 +37,6 @@
                 android:layout_width="wrap_content"
                 android:layout_height="70sp"
                 android:layout_below="@+id/tv1"
-                android:layout_toEndOf="@+id/bn9"
                 android:onClick="show"
                 android:text="   -   " />
 
@@ -48,7 +45,6 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_below="@+id/bn6"
-                android:layout_toEndOf="@+id/bn9"
                 android:onClick="show"
                 android:text="   /" />
 
@@ -57,8 +53,6 @@
                 android:layout_width="wrap_content"
                 android:layout_height="80sp"
                 android:layout_above="@+id/bn14"
-                android:layout_marginStart="0dp"
-                android:layout_toEndOf="@+id/bn9"
                 android:onClick="show"
                 android:text="   *   " />
 
@@ -100,21 +94,23 @@
                 android:text="   C   " />
 
             <Button
-                android:id="@+id/button23"
+                android:id="@+id/btn31"
                 android:layout_width="wrap_content"
                 android:layout_height="96dp"
                 android:layout_above="@+id/bn11"
                 android:layout_alignParentStart="true"
                 android:layout_marginStart="0dp"
+                android:onClick="show"
                 android:text="SUB GST" />
 
             <Button
-                android:id="@+id/button22"
+                android:id="@+id/bn30"
                 android:layout_width="match_parent"
                 android:layout_height="110dp"
                 android:layout_above="@+id/bn11"
                 android:layout_marginStart="0dp"
                 android:layout_toEndOf="@+id/bn9"
+                android:onClick="show"
                 android:text="ADD GST" />
 
 

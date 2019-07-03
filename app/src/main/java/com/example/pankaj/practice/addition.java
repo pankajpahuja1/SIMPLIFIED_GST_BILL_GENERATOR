@@ -10,6 +10,9 @@ import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
+
 public class addition extends AppCompatActivity {
     EditText ee1;
 
@@ -25,15 +28,30 @@ public class addition extends AppCompatActivity {
     {
 
 
+
             Intent i = new Intent(addition.this, customer_detail.class);
             String a = ee1.getText().toString();
-            i.putExtra("GST_NO.", a);
-            startActivity(i);
+
+
+
+            if(a.charAt(0)=='0'||a.charAt(0)=='1'||a.charAt(0)=='2'||a.charAt(0)=='3'||a.charAt(0)=='4'||a.charAt(0)=='5'||a.charAt(0)=='6'||a.charAt(0)=='7'||a.charAt(0)=='8'||a.charAt(0)=='9'&&a.charAt(1)=='0'||a.charAt(1)=='1'||a.charAt(1)=='2'||a.charAt(1)=='3'||a.charAt(1)=='4'||a.charAt(1)=='5'||a.charAt(1)=='6'||a.charAt(1)=='7'||a.charAt(1)=='8'||a.charAt(1)=='9')
+            {
+
+                i.putExtra("GST_NO.", a);
+                startActivity(i);
+            }
+            else {
+                Toast  toast=Toast.makeText(getApplicationContext(),"invalid GST no",Toast.LENGTH_SHORT);
+                toast.show();
+            }
 
       //  else
        // {
         //    Toast.makeText();
         // }
     }
+    FirebaseDatabase database = FirebaseDatabase.getInstance();
+    DatabaseReference myRef = database.getReference("message");
+   // myRef.setValue("Hello, World!");
 }
 
